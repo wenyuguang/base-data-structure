@@ -111,7 +111,7 @@ public class SequenceList<T> implements Iterable<T>{
      */
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new SIterator();
     }
 
     private class SIterator implements Iterator{
