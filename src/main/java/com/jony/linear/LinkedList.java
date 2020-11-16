@@ -127,8 +127,8 @@ public class LinkedList<T> implements Iterable<T>{
          */
         @Override
         public T next() {
-            Node<T> next = node.next;
-            return next.data;
+            node = node.next;
+            return node.data;
         }
     }
 
